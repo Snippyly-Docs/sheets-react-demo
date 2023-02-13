@@ -18,6 +18,7 @@
 .SpreadsheetGrid__headCell:first-child {
   border-top-left-radius: 12px;
   border-bottom-left-radius: 12px;
+  border-left: none;
 }
 
 .SpreadsheetGrid__headCell:last-child {
@@ -26,8 +27,8 @@
 }
 
 .SpreadsheetGrid__cell {
-  border-left: none;
-  border-right: none;
+  border-left: none !important;
+  border-right: none !important;
 }
 
 .SpreadsheetGridInput {
