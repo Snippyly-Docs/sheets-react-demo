@@ -19,8 +19,9 @@ const App = () => {
   }, [client]);
 
   return (
-    <div className="app-container">
+    <div className={styles['app-container']}>
       <DemoGrid />
+      <h1>Test</h1>
     </div>
   );
 };
