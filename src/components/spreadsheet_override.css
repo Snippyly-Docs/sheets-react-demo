@@ -1,0 +1,24 @@
+.SpreadsheetGrid__cell_active {
+  box-shadow: inset 0 0 0 1px #625DF5;
+}
+
+.SpreadsheetGrid__headCell {
+  background-color: #F4F5F6;
+  color: #777E90;
+  border-right: none;
+}
+
+.SpreadsheetGrid__headCell:first-child {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.SpreadsheetGrid__headCell:last-child {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.SpreadsheetGrid__cell {
+  border-left: none;
+  border-right: none;
+}
