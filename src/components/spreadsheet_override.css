@@ -6,6 +6,13 @@
   background-color: #F4F5F6;
   color: #777E90;
   border-right: none;
+  border-bottom: none !important;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.SpreadsheetGridScrollWrapper {
+  border-bottom: none;
 }
 
 .SpreadsheetGrid__headCell:first-child {
@@ -22,3 +29,15 @@
   border-left: none;
   border-right: none;
 }
+
+.SpreadsheetGridInput {
+  font-family: Poppins !important;
+}
+
+.SpreadsheetGrid__row {
+  border-bottom: 1px solid #D4D6DF;
+}
+
+/* .SpreadsheetGrid {
+  border-bottom: none !important;
+} */

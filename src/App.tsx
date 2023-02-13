@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useSnippylyClient } from '@snippyly/react';
 import { generateUserData } from './util/user';
 import DemoGrid from "./components/DemoGrid";
+import Toolbar from "./components/Toolbar";
 import styles from './App.module.css';
 import './App.css';
 
@@ -20,8 +21,8 @@ const App = () => {
 
   return (
     <div className={styles['app-container']}>
+      <Toolbar />
       <DemoGrid />
-      <h1>Test</h1>
     </div>
   );
 };

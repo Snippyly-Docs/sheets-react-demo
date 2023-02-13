@@ -17,6 +17,25 @@ const DemoGrid = () => {
     setRows([].concat(...rows));
   }
 
+  const getDocumentHeight = () => {
+    const body = document.body,
+      html = document.documentElement;
+
+    return Math.max(body.scrollHeight, body.offsetHeight,
+      html.clientHeight, html.scrollHeight, html.offsetHeight);
+  };
+
+  // react-spreadsheet-grid requires a pixel header height
+  const getHeaderHeight = () => {
+    return getDocumentHeight() * 0.085;
+  };
+
+  const [headerHeight, setHeaderHeight] = useState(getHeaderHeight());
+
+  window.onresize = () => {
+    setHeaderHeight(getHeaderHeight());
+  };
+
   const initColumns = () => {
     return [
       {
@@ -87,6 +106,8 @@ const DemoGrid = () => {
       columns={initColumns()}
       rows={DemoRows}
       getRowKey={(row: any) => row.id}
+      headerHeight={headerHeight}
+      rowHeight={headerHeight}
     >
     </Grid>
   );
