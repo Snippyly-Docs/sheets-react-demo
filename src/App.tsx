@@ -3,6 +3,7 @@ import { useSnippylyClient } from '@snippyly/react';
 import { generateUserData } from './util/user';
 import DemoGrid from "./components/DemoGrid";
 import styles from './App.module.css';
+import './App.css';
 
 const App = () => {
 
@@ -18,9 +19,9 @@ const App = () => {
   }, [client]);
 
   return (
-    <DemoGrid />
-    // <div className={styles['app-container']}>
-    // </div>
+    <div className="app-container">
+      <DemoGrid />
+    </div>
   );
 };
 
