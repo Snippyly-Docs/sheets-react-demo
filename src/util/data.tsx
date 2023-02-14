@@ -65,13 +65,5 @@ export const DemoRows: Array<any> = [
     operatingCost: '$225000',
     netIncome: '$175000',
     balanceSheet: '$1650000'
-  },
-  {
-    id: 8, 
-    quarter: 'Q2-2022',
-    revenue: '$400000',
-    operatingCost: '$230000',
-    netIncome: '$170000',
-    balanceSheet: '$1650000'
   }
 ];
