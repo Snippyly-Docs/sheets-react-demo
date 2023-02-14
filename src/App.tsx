@@ -4,7 +4,6 @@ import { generateUserData } from './util/user';
 import DemoGrid from "./components/DemoGrid";
 import Toolbar from "./components/Toolbar";
 import styles from './App.module.css';
-import './App.css';
 
 const App = () => {
 
