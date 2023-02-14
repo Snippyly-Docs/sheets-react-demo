@@ -9,6 +9,7 @@
   border-bottom: none !important;
   font-size: 14px;
   font-weight: 600;
+  padding-left: 2.5vw;
 }
 
 .SpreadsheetGridScrollWrapper {
@@ -29,6 +30,7 @@
 .SpreadsheetGrid__cell {
   border-left: none !important;
   border-right: none !important;
+  padding-left: 2.5vw;
 }
 
 .SpreadsheetGridInput {
