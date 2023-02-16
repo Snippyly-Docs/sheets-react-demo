@@ -16,6 +16,8 @@ const App = () => {
     const user = generateUserData();
     client.identify(user);
 
+    client.setDocumentId('document');
+
   }, [client]);
 
   return (

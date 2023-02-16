@@ -1,5 +1,7 @@
 import styles from './Toolbar.module.css';
 
+import { SnippylyPresence } from '@snippyly/react';
+
 const Toolbar = () => {
 
   return (
@@ -9,7 +11,7 @@ const Toolbar = () => {
         <h2>Quarterly Financial Results</h2>
       </div>
       <div className={styles['presence-container']}>
-        Placeholder
+        <SnippylyPresence />
       </div>
     </div>
   );
