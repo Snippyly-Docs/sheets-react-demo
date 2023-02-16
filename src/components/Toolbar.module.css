@@ -19,8 +19,14 @@ h2 {
 }
 
 .icon {
-  height: 3.2vw;
+  height: 3.vw;
   width: 3.2vw;
   background-color: #0DCF82;
   border-radius: 8px;
+}
+
+.presence-container {
+  display: flex;
+  gap: 1vw;
+  align-items: center;
 }
