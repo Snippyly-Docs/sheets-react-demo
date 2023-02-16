@@ -30,7 +30,12 @@
 .SpreadsheetGrid__cell {
   border-left: none !important;
   border-right: none !important;
-  padding-left: 2.5vw;
+  /* padding-left: 2.5vw; */
+  padding: 0;
+}
+
+.SpreadsheetGrid__cell > * {
+  pointer-events: all !important;
 }
 
 .SpreadsheetGridInput {
@@ -45,3 +50,29 @@
 /* .SpreadsheetGrid {
   border-bottom: none !important;
 } */
+
+.comment-tool-container {
+  position: absolute;
+  right: 1vw;
+  top: 1vw;
+  display: none;
+  z-index: 999;
+}
+
+.cell-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.cell {
+  width: 100%;
+  height: 100%;
+  padding-left: 2.5vw;
+}
+
+.SpreadsheetGrid__cell:hover > .cell-container > .comment-tool-container {
+  display: block;
+}

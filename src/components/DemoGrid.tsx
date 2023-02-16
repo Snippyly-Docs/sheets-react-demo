@@ -1,14 +1,13 @@
 import { useEffect, useState } from "react";
-import { useSnippylyClient } from '@snippyly/react';
-import styles from './DemoGrid.module.css';
+import { SnippylyCommentTool } from '@snippyly/react';
 // @ts-ignore
 import { Grid, Input } from 'react-spreadsheet-grid';
 import { DemoRows } from "../util/data";
-import './spreadsheet_override.css';
+
+import './DemoGrid.css';
 
 const DemoGrid = () => {
 
-  const { client } = useSnippylyClient();
   const [rows, setRows] = useState(DemoRows);
 
   const onFieldChange = (rowId: number, field: string) => (value: string) => {
@@ -42,11 +41,17 @@ const DemoGrid = () => {
         title: () => "Quarter",
         value: (row: any, { focus }: any) => {
           return (
-            <Input
-              value={row.quarter}
-              focus={focus}
-              onChange={onFieldChange(row.id, 'quarter')}
-            />
+            <div id={`quarter-cell-${row.id}`} className="cell-container">
+              <div className="comment-tool-container">
+                <SnippylyCommentTool targetCommentElementId={`quarter-cell-${row.id}`} />
+              </div>
+              <div className="cell">
+                <Input
+                  value={row.quarter}
+                  onChange={onFieldChange(row.id, 'quarter')}
+                />
+              </div>
+            </div>
           )
         }
       },
@@ -54,11 +59,17 @@ const DemoGrid = () => {
         title: () => "Revenue",
         value: (row: any, { focus }: any) => {
           return (
-            <Input
-              value={row.revenue}
-              focus={focus}
-              onChange={onFieldChange(row.id, 'revenue')}
-            />
+            <div id={`revenue-cell-${row.id}`} className="cell-container">
+              <div className="comment-tool-container">
+                <SnippylyCommentTool targetCommentElementId={`revenue-cell-${row.id}`} />
+              </div>
+              <div className="cell">
+                <Input
+                  value={row.revenue}
+                  onChange={onFieldChange(row.id, 'revenue')}
+                />
+              </div>
+            </div>
           )
         }
       },
@@ -66,11 +77,17 @@ const DemoGrid = () => {
         title: () => "Operating Cost",
         value: (row: any, { focus }: any) => {
           return (
-            <Input
-              value={row.operatingCost}
-              focus={focus}
-              onChange={onFieldChange(row.id, 'operatingCost')}
-            />
+            <div id={`operatingCost-cell-${row.id}`} className="cell-container">
+              <div className="comment-tool-container">
+                <SnippylyCommentTool targetCommentElementId={`operatingCost-cell-${row.id}`} />
+              </div>
+              <div className="cell">
+                <Input
+                  value={row.operatingCost}
+                  onChange={onFieldChange(row.id, 'operatingCost')}
+                />
+              </div>
+            </div>
           )
         }
       },
@@ -78,11 +95,17 @@ const DemoGrid = () => {
         title: () => "Net Income",
         value: (row: any, { focus }: any) => {
           return (
-            <Input
-              value={row.netIncome}
-              focus={focus}
-              onChange={onFieldChange(row.id, 'netIncome')}
-            />
+            <div id={`netIncome-cell-${row.id}`} className="cell-container">
+              <div className="comment-tool-container">
+                <SnippylyCommentTool targetCommentElementId={`netIncome-cell-${row.id}`} />
+              </div>
+              <div className="cell">
+                <Input
+                  value={row.netIncome}
+                  onChange={onFieldChange(row.id, 'netIncome')}
+                />
+              </div>
+            </div>
           )
         }
       },
@@ -90,11 +113,17 @@ const DemoGrid = () => {
         title: () => "Balance Sheet",
         value: (row: any, { focus }: any) => {
           return (
-            <Input
-              value={row.balanceSheet}
-              focus={focus}
-              onChange={onFieldChange(row.id, 'balanceSheet')}
-            />
+            <div id={`balanceSheet-cell-${row.id}`} className="cell-container">
+              <div className="comment-tool-container">
+                <SnippylyCommentTool targetCommentElementId={`balanceSheet-cell-${row.id}`} />
+              </div>
+              <div className="cell">
+                <Input
+                  value={row.balanceSheet}
+                  onChange={onFieldChange(row.id, 'balanceSheet')}
+                />
+              </div>
+            </div>
           )
         }
       },
