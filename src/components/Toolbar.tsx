@@ -1,6 +1,6 @@
 import styles from './Toolbar.module.css';
 
-import { SnippylyPresence } from '@snippyly/react';
+import { SnippylyPresence, SnippylyTagTool } from '@snippyly/react';
 
 const Toolbar = () => {
 
@@ -11,6 +11,7 @@ const Toolbar = () => {
         <h2>Quarterly Financial Results</h2>
       </div>
       <div className={styles['presence-container']}>
+        <SnippylyTagTool />
         <SnippylyPresence />
       </div>
     </div>
