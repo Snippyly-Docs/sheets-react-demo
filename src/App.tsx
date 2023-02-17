@@ -15,6 +15,9 @@ const App = () => {
 
     const user = generateUserData();
     client.identify(user);
+    
+    const commentElement = client.getCommentElement();
+    commentElement.enablePopoverMode(true);
 
     client.setDocumentId('sheets-react-demo');
 
