@@ -7,6 +7,11 @@ import styles from './App.module.css';
 
 const App = () => {
 
+  /**
+   * Snippyly Code Example
+   * Initializes the Snippyly SDK.
+   * In this example, we enable popover mode for comments.
+   */
   const { client } = useSnippylyClient();
 
   useEffect(() => {

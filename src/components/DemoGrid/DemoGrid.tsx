@@ -43,6 +43,10 @@ const DemoGrid = () => {
           return (
             <div className="cell-container">
               <div className="comment-tool-container">
+                {/**
+                 * Snippyly Code Example
+                 * The comment tool can have a targetCommentElementId to attach it to that element.
+                 */}
                 <SnippylyCommentTool targetCommentElementId={`quarter-cell-${row.id}`} />
               </div>
               <div id={`quarter-cell-${row.id}`} className="cell">

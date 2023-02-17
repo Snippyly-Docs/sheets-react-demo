@@ -11,6 +11,10 @@ const Toolbar = () => {
         <h2>Quarterly Financial Results</h2>
       </div>
       <div className={styles['presence-container']}>
+        {/**
+         * Snippyly Code Example
+         * Adding the tag tool and presence component.
+         */}
         <SnippylyTagTool />
         <SnippylyPresence />
       </div>
