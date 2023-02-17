@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { SnippylyCommentTool } from '@snippyly/react';
 // @ts-ignore
 import { Grid, Input } from 'react-spreadsheet-grid';
-import { DemoRows } from "../util/data";
+import { DemoRows } from "../../util/data";
 
 import './DemoGrid.css';
 

@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import { useSnippylyClient } from '@snippyly/react';
 import { generateUserData } from './util/user';
-import DemoGrid from "./components/DemoGrid";
-import Toolbar from "./components/Toolbar";
+import DemoGrid from "./components/DemoGrid/DemoGrid";
+import Toolbar from "./components/Toolbar/Toolbar";
 import styles from './App.module.css';
 
 const App = () => {
