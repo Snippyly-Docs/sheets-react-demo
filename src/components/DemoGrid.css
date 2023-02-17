@@ -6,7 +6,7 @@
   background-color: #F4F5F6;
   color: #777E90;
   border-right: none;
-  border-bottom: none !important;
+  border-bottom: none;
   font-size: 1.1vw;
   font-weight: 600;
   padding-left: 2.5vw;
@@ -28,8 +28,9 @@
 }
 
 .SpreadsheetGrid__cell {
-  border-left: none !important;
-  border-right: none !important;
+  border-top: 1px solid transparent !important;
+  border-left: 1px solid white !important;
+  border-right: 1px solid white !important;
   /* padding-left: 2.5vw; */
   padding: 0;
 }
@@ -70,6 +71,10 @@
 .cell {
   width: 100%;
   height: 100%;
+  /* padding-left: 2.5vw; */
+}
+
+.cell > input {
   padding-left: 2.5vw;
 }
 

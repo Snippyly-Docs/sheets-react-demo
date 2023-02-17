@@ -41,11 +41,11 @@ const DemoGrid = () => {
         title: () => "Quarter",
         value: (row: any, { focus }: any) => {
           return (
-            <div id={`quarter-cell-${row.id}`} className="cell-container">
+            <div className="cell-container">
               <div className="comment-tool-container">
                 <SnippylyCommentTool targetCommentElementId={`quarter-cell-${row.id}`} />
               </div>
-              <div className="cell">
+              <div id={`quarter-cell-${row.id}`} className="cell">
                 <Input
                   value={row.quarter}
                   onChange={onFieldChange(row.id, 'quarter')}
