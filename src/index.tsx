@@ -10,6 +10,9 @@ root.render(
     {/**
      * Snippyly Code Example
      * Adding the Snippyly root components.
+     * Feature: Popover Comments
+     * Feature: Live Cursors
+     * Feature: Tags
      */}
     <SnippylyProvider apiKey="WDMgKshFEsPTqvBjUcH3">
       <SnippylyComments />

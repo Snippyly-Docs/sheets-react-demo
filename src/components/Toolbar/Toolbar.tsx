@@ -14,6 +14,8 @@ const Toolbar = () => {
         {/**
          * Snippyly Code Example
          * Adding the tag tool and presence component.
+         * Feature: Tags
+         * Feature: Presence
          */}
         <SnippylyTagTool />
         <SnippylyPresence />

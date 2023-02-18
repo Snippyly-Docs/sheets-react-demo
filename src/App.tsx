@@ -11,6 +11,7 @@ const App = () => {
    * Snippyly Code Example
    * Initializes the Snippyly SDK.
    * In this example, we enable popover mode for comments.
+   * Feature: Popover Comments
    */
   const { client } = useSnippylyClient();
 
