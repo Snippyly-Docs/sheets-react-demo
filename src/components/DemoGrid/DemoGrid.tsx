@@ -46,7 +46,7 @@ const DemoGrid = () => {
                 {/**
                  * Snippyly Code Example
                  * The comment tool can have a targetCommentElementId to attach it to that element.
-                 * Feature: Popover Comments
+                 * Feature: Popover Comments -- Step #3
                  */}
                 <SnippylyCommentTool targetCommentElementId={`quarter-cell-${row.id}`} />
               </div>
