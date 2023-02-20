@@ -23,7 +23,7 @@ root.render(
      * Feature: Live Cursors
      * Feature: Tags -- Step #1
      */}
-    <SnippylyProvider apiKey="WDMgKshFEsPTqvBjUcH3">
+    <SnippylyProvider apiKey="K0klwhmHHauN8GMHDbch">
       <SnippylyRecorderControlPanel />
       <SnippylyRecorderNotes />
       <SnippylyHuddle />
