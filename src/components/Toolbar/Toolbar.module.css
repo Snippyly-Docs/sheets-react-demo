@@ -30,3 +30,7 @@ h2 {
   gap: 1vw;
   align-items: center;
 }
+
+snippyly-tag-tool {
+  margin-top: 0.5vh !important;
+}

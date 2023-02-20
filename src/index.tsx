@@ -1,7 +1,16 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App";
-import { SnippylyProvider, SnippylyCursor, SnippylyComments, SnippylyTags } from '@snippyly/react';
+import { 
+  SnippylyProvider, 
+  SnippylyCursor, 
+  SnippylyComments, 
+  SnippylyTags, 
+  SnippylyRecorderControlPanel, 
+  SnippylyRecorderNotes,
+  SnippylyHuddle,
+  SnippylyCommentsSidebar
+} from '@snippyly/react';
 
 const rootContainer = document.getElementById('root');
 const root = createRoot(rootContainer as HTMLElement);
@@ -15,9 +24,13 @@ root.render(
      * Feature: Tags -- Step #1
      */}
     <SnippylyProvider apiKey="WDMgKshFEsPTqvBjUcH3">
+      <SnippylyRecorderControlPanel />
+      <SnippylyRecorderNotes />
+      <SnippylyHuddle />
       <SnippylyComments />
       <SnippylyCursor />
       <SnippylyTags />
+      <SnippylyCommentsSidebar />
       <App />
     </SnippylyProvider>
   </React.StrictMode>

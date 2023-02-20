@@ -1,6 +1,6 @@
 import styles from './Toolbar.module.css';
 
-import { SnippylyPresence, SnippylyTagTool } from '@snippyly/react';
+import { SnippylyPresence, SnippylyTagTool, SnippylyRecorderTool, SnippylyHuddleTool, SnippylySidebarButton } from '@snippyly/react';
 
 const Toolbar = () => {
 
@@ -17,6 +17,9 @@ const Toolbar = () => {
          * Feature: Tags -- Step #2
          * Feature: Presence
          */}
+        <SnippylySidebarButton />
+        <SnippylyHuddleTool type="all" />
+        <SnippylyRecorderTool type="all" />
         <SnippylyTagTool />
         <SnippylyPresence />
       </div>
