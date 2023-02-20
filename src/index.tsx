@@ -14,7 +14,7 @@ root.render(
      * Feature: Live Cursors
      * Feature: Tags -- Step #1
      */}
-    <SnippylyProvider apiKey="K0klwhmHHauN8GMHDbch">
+    <SnippylyProvider apiKey="WDMgKshFEsPTqvBjUcH3">
       <SnippylyComments />
       <SnippylyCursor />
       <SnippylyTags />
