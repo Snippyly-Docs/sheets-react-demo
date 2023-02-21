@@ -15,7 +15,7 @@ import {
 const rootContainer = document.getElementById('root');
 const root = createRoot(rootContainer as HTMLElement);
 root.render(
-  <React.StrictMode>
+  <>
     {/**
      * Snippyly Code Example
      * Adding the Snippyly root components.
@@ -33,5 +33,5 @@ root.render(
       <SnippylyCommentsSidebar />
       <App />
     </SnippylyProvider>
-  </React.StrictMode>
+  </>
 );
