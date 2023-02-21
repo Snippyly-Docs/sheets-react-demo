@@ -11,16 +11,19 @@ const App = () => {
 
     const isDataReset = window.sessionStorage.getItem('_snippyly_demo_reset');
 
-    if (isDataReset === null) {
-      fetch(
-        "https://us-central1-snippyly-sdk-prod.cloudfunctions.net/resetDemoData",
-        {
-          headers: { "Content-Type": "application/json" },
-          method: "POST",
-          body: JSON.stringify({ documentId: 'sheets-react-demo' }),
-        }
-      );
-      window.sessionStorage.setItem('_snippyly_demo_reset', 'true');
+    return () => {
+      if (isDataReset === null) {
+        fetch(
+          "https://us-central1-snippyly-sdk-prod.cloudfunctions.net/resetDemoData",
+          {
+            headers: { "Content-Type": "application/json" },
+            method: "POST",
+            body: JSON.stringify({ documentId: 'sheets-react-demo' }),
+          }
+        );
+        window.sessionStorage.setItem('_snippyly_demo_reset', 'true');
+      }
+
     }
   }, []);
 
