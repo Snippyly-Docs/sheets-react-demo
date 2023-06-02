@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { SnippylyCommentTool } from '@snippyly/react';
+import { VeltCommentTool } from '@veltdev/react';
 // @ts-ignore
 import { Grid, Input } from 'react-spreadsheet-grid';
 import { DemoRows } from "../../util/data";
@@ -44,11 +44,11 @@ const DemoGrid = () => {
             <div className="cell-container">
               <div className="comment-tool-container">
                 {/**
-                 * Snippyly Code Example
+                 * Velt Code Example
                  * The comment tool can have a targetCommentElementId to attach it to that element.
                  * Feature: Popover Comments -- Step #3
                  */}
-                <SnippylyCommentTool targetCommentElementId={`quarter-cell-${row.id}`} />
+                <VeltCommentTool targetCommentElementId={`quarter-cell-${row.id}`} />
               </div>
               <div id={`quarter-cell-${row.id}`} className="cell">
                 <Input
@@ -66,7 +66,7 @@ const DemoGrid = () => {
           return (
             <div id={`revenue-cell-${row.id}`} className="cell-container">
               <div className="comment-tool-container">
-                <SnippylyCommentTool targetCommentElementId={`revenue-cell-${row.id}`} />
+                <VeltCommentTool targetCommentElementId={`revenue-cell-${row.id}`} />
               </div>
               <div className="cell">
                 <Input
@@ -84,7 +84,7 @@ const DemoGrid = () => {
           return (
             <div id={`operatingCost-cell-${row.id}`} className="cell-container">
               <div className="comment-tool-container">
-                <SnippylyCommentTool targetCommentElementId={`operatingCost-cell-${row.id}`} />
+                <VeltCommentTool targetCommentElementId={`operatingCost-cell-${row.id}`} />
               </div>
               <div className="cell">
                 <Input
@@ -102,7 +102,7 @@ const DemoGrid = () => {
           return (
             <div id={`netIncome-cell-${row.id}`} className="cell-container">
               <div className="comment-tool-container">
-                <SnippylyCommentTool targetCommentElementId={`netIncome-cell-${row.id}`} />
+                <VeltCommentTool targetCommentElementId={`netIncome-cell-${row.id}`} />
               </div>
               <div className="cell">
                 <Input
@@ -120,7 +120,7 @@ const DemoGrid = () => {
           return (
             <div id={`balanceSheet-cell-${row.id}`} className="cell-container">
               <div className="comment-tool-container">
-                <SnippylyCommentTool targetCommentElementId={`balanceSheet-cell-${row.id}`} />
+                <VeltCommentTool targetCommentElementId={`balanceSheet-cell-${row.id}`} />
               </div>
               <div className="cell">
                 <Input

@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useSnippylyClient } from '@snippyly/react';
+import { useVeltClient } from '@veltdev/react';
 import { generateUserData } from './util/user';
 import DemoGrid from "./components/DemoGrid/DemoGrid";
 import Toolbar from "./components/Toolbar/Toolbar";
@@ -8,12 +8,12 @@ import styles from './App.module.css';
 const App = () => {
 
   /**
-   * Snippyly Code Example
-   * Initializes the Snippyly SDK.
+   * Velt Code Example
+   * Initializes the Velt SDK.
    * In this example, we enable popover mode for comments.
    * Feature: Popover Comments -- Step #2
    */
-  const { client } = useSnippylyClient();
+  const { client } = useVeltClient();
 
   useEffect(() => {
 
@@ -23,7 +23,7 @@ const App = () => {
     client.identify(user);
     
     const commentElement = client.getCommentElement();
-    commentElement.enablePopoverMode(true);
+    commentElement.enablePopoverMode();
 
     client.setDocumentId('sheets-react-demo');
 
@@ -33,7 +33,7 @@ const App = () => {
 
     if (!client) return;
 
-    client.getPresenceElement().getOnlineUsersOnCurrentDocument().subscribe(users => {
+    client.getPresenceElement().getOnlineUsersOnCurrentDocument().subscribe((users: any) => {
       if (users === null) return;
       if (users.length === 0) {
         const isDataReset = window.sessionStorage.getItem('_snippyly_demo_reset');

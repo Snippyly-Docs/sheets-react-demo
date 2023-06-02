@@ -1,6 +1,6 @@
 import styles from './Toolbar.module.css';
 
-import { SnippylyPresence, SnippylyTagTool, SnippylyRecorderTool, SnippylyHuddleTool, SnippylySidebarButton } from '@snippyly/react';
+import { VeltPresence, VeltTagTool, VeltRecorderTool, VeltHuddleTool, VeltSidebarButton } from '@veltdev/react';
 
 const Toolbar = () => {
 
@@ -12,16 +12,16 @@ const Toolbar = () => {
       </div>
       <div className={styles['presence-container']}>
         {/**
-         * Snippyly Code Example
+         * Velt Code Example
          * Adding the tag tool and presence component.
          * Feature: Tags -- Step #2
          * Feature: Presence
          */}
-        <SnippylySidebarButton />
-        <SnippylyHuddleTool type="all" />
-        <SnippylyRecorderTool type="all" />
-        <SnippylyTagTool />
-        <SnippylyPresence />
+        <VeltSidebarButton />
+        <VeltHuddleTool type="all" />
+        <VeltRecorderTool type="all" />
+        <VeltTagTool />
+        <VeltPresence />
       </div>
     </div>
   );
